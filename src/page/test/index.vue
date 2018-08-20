@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="a">
     <div v-for="d in ddd"
          :key="d.ch">
       <quna :txt="d" />

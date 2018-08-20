@@ -3,7 +3,7 @@
     <!-- 详细定义 概览块-图 的样式和内容 -->
     <img slot="img"
          class="mysize"
-         :src="imgrr"
+         src="../../assets/img/01.jpg"
          alt="xxx">
 
     <!-- 详细定义 概览块-文 的样式和内容 -->

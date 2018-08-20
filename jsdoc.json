@@ -1,0 +1,25 @@
+{
+  "tags": {
+    "allowUnknownTags": true,
+    "dictionaries": ["jsdoc", "closure"]
+  },
+  "source": {
+    "include": ["./src"],
+    "includePattern": "\\.(vue|js)$",
+    "excludePattern": "(^|\\/|\\\\)_"
+  },
+  "plugins": ["plugins/markdown", "node_modules/jsdoc-vuejs"],
+  "templates": {
+    "cleverLinks": false,
+    "monospaceLinks": false,
+    "footerText": "哈尔滨拓思科技有限公司"
+  },
+  "opts": {
+    "template": "node_modules/tui-jsdoc-template",
+    "readme": "./README.MD",
+    "encoding": "utf8",
+    "destination": "./doc",
+    "recurse": true,
+    "tutorials": "./src"
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "name": "tstweb",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "doc": "jsdoc -c jsdoc.json -P package.json",
+    "doc:serve": "live-server --port=8097 --open=doc --watch=doc ",
+    "doc:watch": "watch \"yarn doc\" src "
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.0.0-rc.12",
+    "@vue/cli-plugin-eslint": "^3.0.0-rc.12",
+    "@vue/cli-service": "^3.0.0-rc.12",
+    "@vue/eslint-config-standard": "^3.0.0-rc.12",
+    "jsdoc": "^3.5.5",
+    "jsdoc-vuejs": "^2.1.0",
+    "live-server": "^1.2.0",
+    "node-sass": "^4.9.0",
+    "sass-loader": "^7.0.1",
+    "tui-jsdoc-template": "^1.2.2",
+    "vue-template-compiler": "^2.5.17",
+    "watch": "^1.0.2"
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true
+  },
+  "babel": {
+    "presets": [
+      "@vue/app"
+    ]
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "@vue/standard"
+    ],
+    "rules": {
+      "space-before-function-paren": "off"
+    },
+    "parserOptions": {
+      "parser": "babel-eslint"
+    }
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ]
+}
